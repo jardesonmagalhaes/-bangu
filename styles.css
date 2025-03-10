@@ -13,72 +13,38 @@ body {
 
 /* ... (outros estilos) ... */
 
-.mobile-nav {
-    background-color: #d00000;
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around; /* Espaçamento uniforme entre os elementos */
-    align-items: center;
-}
-
-.mobile-nav .logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.mobile-nav .logo {
-    width: 60px; /* Aumenta o tamanho do logo */
-    border-radius: 50%;
-    margin-right: 15px; /* Aumenta o espaçamento do logo */
-}
-
-.mobile-nav h1 {
-    font-size: 1.5em; /* Aumenta o tamanho da fonte do título */
-}
+/* ... (outros estilos) ... */
 
 .mobile-nav nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around; /* Distribui os itens uniformemente */
-    flex-grow: 1; /* Permite que o menu ocupe o espaço restante */
+    flex-wrap: wrap; /* Permite que os itens do menu quebrem em várias linhas */
+    justify-content: center; /* Centraliza os itens do menu */
 }
 
 .mobile-nav nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px; /* Aumenta o padding dos links */
-    margin: 0 10px; /* Aumenta o espaçamento entre os links */
-    border-radius: 8px; /* Aumenta o raio da borda */
+    padding: 10px 15px;
+    margin: 5px; /* Reduz o espaçamento entre os links */
+    border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.2);
-    font-size: 1.1em; /* Aumenta o tamanho da fonte dos links */
-}
-
-.mobile-nav nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 1em; /* Reduz o tamanho da fonte dos links */
+    white-space: nowrap; /* Impede que o texto dos links quebre */
 }
 
 /* ... (outros estilos) ... */
 
 /* Media query para telas maiores (tablets e desktops) */
 @media (min-width: 768px) {
-    .mobile-nav {
-        padding: 20px; /* Aumenta o padding em telas maiores */
-    }
-
-    .mobile-nav .logo {
-        width: 70px; /* Aumenta o tamanho do logo em telas maiores */
-        margin-right: 20px; /* Aumenta o espaçamento do logo em telas maiores */
-    }
-
-    .mobile-nav h1 {
-        font-size: 1.8em; /* Aumenta o tamanho da fonte do título em telas maiores */
+    .mobile-nav nav ul {
+        flex-wrap: nowrap; /* Impede que os itens do menu quebrem em telas maiores */
+        justify-content: space-around; /* Distribui os itens uniformemente em telas maiores */
     }
 
     .mobile-nav nav ul li a {
-        padding: 12px 20px; /* Aumenta o padding dos links em telas maiores */
-        margin: 0 15px; /* Aumenta o espaçamento entre os links em telas maiores */
-        font-size: 1.2em; /* Aumenta o tamanho da fonte dos links em telas maiores */
+        margin: 0 10px; /* Restaura o espaçamento original em telas maiores */
+        font-size: 1.1em; /* Restaura o tamanho da fonte original em telas maiores */
     }
 }
 .content {
