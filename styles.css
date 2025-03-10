@@ -165,18 +165,37 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
+    /* ... (outros estilos) ... */
+
+    .mobile-nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        margin: 5px;
+        border-radius: 5px;
     }
 
-    .sidebar {
-        width: 100%;
-        height: auto;
+    .mobile-nav ul li:nth-child(1) a {
+        background-color: #007bff; /* Azul para Início */
     }
 
-    .content {
-        padding: 20px;
+    .mobile-nav ul li:nth-child(2) a {
+        background-color: #28a745; /* Verde para Equipe */
     }
+
+    .mobile-nav ul li:nth-child(3) a {
+        background-color: #dc3545; /* Vermelho para Calendário */
+    }
+
+    .mobile-nav ul li:nth-child(4) a {
+        background-color: #ffc107; /* Amarelo para Estatísticas */
+    }
+
+    .mobile-nav ul li:nth-child(5) a {
+        background-color: #17a2b8; /* Ciano para Contato */
+    }
+
+    /* ... (outros estilos) ... */
 }
 
 .noticias-destaque {
