@@ -38,8 +38,10 @@ body {
 .mobile-nav nav ul {
     list-style: none;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .mobile-nav nav ul li a {
