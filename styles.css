@@ -17,23 +17,24 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden; /* Garante que o conteúdo não ultrapasse a altura */
+    overflow: hidden;
+    padding: 10px 0;
 }
 
 .mobile-nav .logo-container {
     display: flex;
     align-items: center;
-    padding: 5px 0; /* Adiciona padding para centralizar o logo verticalmente */
+    margin-bottom: 8px;
 }
 
 .mobile-nav .logo {
-    width: 30px;
+    width: 40px;
     border-radius: 50%;
-    margin-right: 5px;
+    margin-right: 8px;
 }
 
 .mobile-nav h1 {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .mobile-nav nav ul {
@@ -44,16 +45,21 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 5px 0; /* Adiciona padding para centralizar os botões verticalmente */
+    padding: 8px 0;
+}
+
+.mobile-nav nav ul li {
+    flex: 1 0 auto;
+    text-align: center;
 }
 
 .mobile-nav nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 5px 10px;
-    margin: 3px;
-    border-radius: 5px;
-    font-size: 0.8em;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    font-size: 1em;
     white-space: nowrap;
 }
 
