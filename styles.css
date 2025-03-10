@@ -14,7 +14,7 @@ body {
 .mobile-nav {
     background-color: #d00000;
     color: white;
-    padding: 21px;
+    height: 30px; /* Altura fixa de 30 pixels */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,17 +23,17 @@ body {
 .mobile-nav .logo-container {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 5px; /* Diminui o espaço abaixo do logo */
 }
 
 .mobile-nav .logo {
-    width: 60px;
+    width: 30px; /* Diminui o tamanho do logo */
     border-radius: 50%;
-    margin-right: 15px;
+    margin-right: 5px; /* Diminui a margem do logo */
 }
 
 .mobile-nav h1 {
-    font-size: 1.5em;
+    font-size: 1em; /* Diminui o tamanho da fonte do título */
 }
 
 .mobile-nav nav ul {
@@ -49,11 +49,10 @@ body {
 .mobile-nav nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 12px 20px;
-    margin: 8px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
-    font-size: 1.1em;
+    padding: 5px 10px; /* Diminui o padding dos botões */
+    margin: 3px; /* Diminui a margem dos botões */
+    border-radius: 5px; /* Diminui o raio da borda dos botões */
+    font-size: 0.8em; /* Diminui o tamanho da fonte dos botões */
     white-space: nowrap;
 }
 
