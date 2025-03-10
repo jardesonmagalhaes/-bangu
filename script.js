@@ -9,25 +9,35 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Modal de Imagem
-    const modal = document.getElementById("modal-imagem");
-    const imagemModal = document.getElementById("imagem-modal");
-    const fecharModal = document.querySelector(".fechar-modal");
+    // Modal de Detalhes da Partida
+    const modalPartida = document.getElementById("modal-partida");
+    const modalTituloPartida = document.getElementById("modal-titulo-partida");
+    const modalGols = document.getElementById("modal-gols");
+    const modalAssistencias = document.getElementById("modal-assistencias");
+    const modalResumo = document.getElementById("modal-resumo");
+    const fecharModalPartida = modalPartida.querySelector(".fechar-modal");
 
-    document.querySelectorAll("#calendario table tr[data-imagem]").forEach((linha) => {
+    document.querySelectorAll("#calendario table tr[data-detalhes]").forEach((linha) => {
         linha.addEventListener("click", function () {
-            imagemModal.src = this.dataset.imagem;
-            modal.style.display = "block";
+            const detalhes = JSON.parse(this.dataset.detalhes);
+            modalTituloPartida.textContent = `${this.children[1].textContent} - ${this.children[2].textContent}`;
+            modalGols.innerHTML = detalhes.gols.map(gol => `<li>${gol}</li>`).join("");
+            modalAssistencias.innerHTML = detalhes.assistencias.map(assistencia => `<li>${assistencia}</li>`).join("");
+            modalResumo.textContent = detalhes.resumo;
+            modalPartida.style.display = "block";
         });
     });
 
-    fecharModal.addEventListener("click", function () {
-        modal.style.display = "none";
+    fecharModalPartida.addEventListener("click", function () {
+        modalPartida.style.display = "none";
     });
 
     window.addEventListener("click", function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
+        if (event.target == modalPartida) {
+            modalPartida.style.display = "none";
         }
     });
+
+    // Inicialização do Modal da Partida (Oculta o Modal no Carregamento)
+    modalPartida.style.display = "none";
 });
