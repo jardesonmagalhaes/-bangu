@@ -11,42 +11,52 @@ body {
     line-height: 1.6;
 }
 
-/* ... (outros estilos) ... */
+.mobile-nav {
+    background-color: #d00000;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-/* ... (outros estilos) ... */
+.mobile-nav .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-nav .logo {
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.mobile-nav h1 {
+    font-size: 1.5em;
+}
 
 .mobile-nav nav ul {
     list-style: none;
     display: flex;
-    flex-wrap: wrap; /* Permite que os itens do menu quebrem em várias linhas */
-    justify-content: center; /* Centraliza os itens do menu */
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .mobile-nav nav ul li a {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
-    margin: 5px; /* Reduz o espaçamento entre os links */
+    margin: 5px;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.2);
-    font-size: 1em; /* Reduz o tamanho da fonte dos links */
-    white-space: nowrap; /* Impede que o texto dos links quebre */
+    font-size: 1em;
+    white-space: nowrap;
 }
 
-/* ... (outros estilos) ... */
-
-/* Media query para telas maiores (tablets e desktops) */
-@media (min-width: 768px) {
-    .mobile-nav nav ul {
-        flex-wrap: nowrap; /* Impede que os itens do menu quebrem em telas maiores */
-        justify-content: space-around; /* Distribui os itens uniformemente em telas maiores */
-    }
-
-    .mobile-nav nav ul li a {
-        margin: 0 10px; /* Restaura o espaçamento original em telas maiores */
-        font-size: 1.1em; /* Restaura o tamanho da fonte original em telas maiores */
-    }
+.mobile-nav nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
 }
+
 .content {
     padding: 20px;
 }
@@ -230,4 +240,30 @@ footer {
     color: #fff;
     font-size: 20px;
     text-decoration: none;
+}
+
+/* Media query para telas maiores (tablets e desktops) */
+@media (min-width: 768px) {
+    .mobile-nav {
+        padding: 20px;
+    }
+
+    .mobile-nav .logo {
+        width: 70px;
+        margin-right: 20px;
+    }
+
+    .mobile-nav h1 {
+        font-size: 1.8em;
+    }
+
+    .mobile-nav nav ul {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .mobile-nav nav ul li a {
+        margin: 0 10px;
+        font-size: 1.1em;
+    }
 }
