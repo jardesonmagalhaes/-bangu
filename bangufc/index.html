@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlético Bangu Oficial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <img src="imagens/logo.jpg" alt="Mascote Bangu Pro Clubs" class="logo">
+                <h1>Atlético Bangu</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#equipe">Equipe</a></li>
+                    <li><a href="#calendario">Calendário</a></li>
+                    <li><a href="#estatisticas">Estatísticas</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <section id="home" class="section">
+                <h2>Bem-vindo ao Atlético Bangu</h2>
+                <p>Onde a paixão pelo FIFA 25 se transforma em glória! ⚽</p>
+                <p>Fundado em 11/09/2024, rumo ao topo! </p>
+            </section>
+            <section id="equipe" class="section">
+                <h2>Equipe</h2>
+                <div class="grid-container">
+                    <div class="posicao">
+                        <h3>Goleiros</h3>
+                        <p>Mannuzinho, Arthur *</p>
+                    </div>
+                    <div class="posicao">
+                        <h3>Zagueiros</h3>
+                        <p>Rudigão, Cyrne, Jardeson, Alexandre Magno, Mega, Lucc Gabe</p>
+                    </div>
+                    <div class="posicao">
+                        <h3>Volantes</h3>
+                        <p>Math, Eli, Lucas Fuentes, Medina</p>
+                    </div>
+                    <div class="posicao">
+                        <h3>Meias</h3>
+                        <p>Gegê, Mayrinck, Karvalho</p>
+                    </div>
+                    <div class="posicao">
+                        <h3>Atacantes</h3>
+                        <p>Júnior, Bruno, Fael, Pietro *</p>
+                    </div>
+                </div>
+            </section>
+            <section id="calendario" class="section">
+                <h2>Calendário</h2>
+                <table>
+                    <tr><th>Data</th><th>Adversário</th><th>Resultado</th></tr>
+                    <tr data-imagem="imagens/copapistao54.jpg"><td>23/02/2025</td><td>Botafofinho</td><td>2-1 ✅</td></tr>
+                    <tr data-imagem="imagens/copapistao54.jpg"><td>23/02/2025</td><td>Sportibo Roma</td><td>0-0 </td></tr>
+                    <tr data-imagem="imagens/copapistao54.jpg"><td>23/02/2025</td><td>Banguzinho</td><td>0-0 </td></tr>
+                    <tr data-imagem="imagens/copapistao54.jpg"><td>23/02/2025</td><td>Limeira ES</td><td>2-2 </td></tr>
+                    <tr data-imagem="imagens/copapistao54.jpg"><td>23/02/2025</td><td>Alcatéia FC</td><td>2-3 ❌</td></tr>
+                </table>
+            </section>
+            <section id="estatisticas" class="section">
+                <h2>Estatísticas do Time</h2>
+                <p> Gols: 12 | Assistências: 8 | Vitórias: 3</p>
+            </section>
+        </main>
+    </div>
+
+    <div id="modal-imagem" class="modal">
+        <span class="fechar-modal">&times;</span>
+        <img class="modal-conteudo" id="imagem-modal">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
